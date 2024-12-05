@@ -150,7 +150,6 @@ function getDueDate(): string
 }
 
 
-
 //Fonctions Services ou Use Case  ou Metier
 function  enregistrerClient(array &$tabClients, array $client): bool
 {
@@ -167,65 +166,6 @@ function checkIfHasDette(array $lastDette): bool
         return differenceInt($lastDette["mtn_dette"], $lastDette["mtn_verse"]) != 0;
     }
     return false;
-}
-function enregistrerDette(array &$tabDettes, array $tabClients, array $client = null): void
-{
-    if ($client == null) { # si le client n'est pas donné
-        $numero = saisieNumValide(sms: "Entrer le numéro du client: ");
-        $client = selectClientByTel($tabClients, $numero);
-        $lastDette = getLastDetteByClientId($tabDettes, $client["client_id"]);
-        if (checkIfCanBuyDette($lastDette)) {
-            $dette = saisieDette($tabDettes, $client);
-            insertInTable(tabOrg: $tabDettes, newVal: $dette);
-        }
-    } else {
-        $dette = saisieDette($tabDettes, $client);
-        insertInTable(tabOrg: $tabDettes, newVal: $dette);
-    }
-
-    if ($client != null) {
-        echo "Dette Enregistrer avec success \n";
-    } else {
-        echo "Erreur! la dette n'a pas été enregistrer \n";
-        echo "Le client a déjà une dette en cours ou n'existe pas \n";
-    }
-}
-
-function checkIfCanBuyDette(array $tabDette): bool
-{
-    if ($tabDette != null) {
-        return differenceInt($tabDette["mtn_dette"], $tabDette["mtn_verse"]) == 0;
-    }
-    return true;
-}
-
-function enregistrerPayement(array &$tabPayements, array $tabClients, array $tabDettes, array $client = null, $lastdette = null): bool
-{
-    if ($client == null) { # si le client n'est pas donné
-        $numero = saisieNumValide(sms: "Entrer le numéro du client: ");
-        $client = selectClientByTel($tabClients, $numero);
-        $lastDette = getLastDetteByClientId($tabDettes, $client["client_id"]);
-        if (!checkIfCanBuyDette($lastDette)) {
-            $payement = saisiePayement($tabPayements, $lastDette);
-            insertInTable(tabOrg: $tabPayements, newVal: $payement);
-            return true;
-        }
-    } else {
-        $payement = saisiePayement($tabPayements, $lastdette);
-        insertInTable(tabOrg: $tabPayements, newVal: $payement);
-        return true;
-    }
-    return false;
-}
-
-function saveDette(array &$tabDettes, array $tabClients, array $client = null): void
-{
-    if (enregistrerDette($tabDettes, $tabClients, $client)) {
-        echo "Dette Enregistrer avec success \n";
-    } else {
-        echo "Erreur! la dette n'a pas été enregistrer \n";
-        echo "Le client a déjà une dette en cours ou n'existe pas \n";
-    }
 }
 
 function listerClient(): array
