@@ -1,0 +1,38 @@
+.menu-item{
+    display: flex;
+    width: 274px;
+    height: 50px;
+    padding: 6px 23px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    text-wrap: nowrap;
+}
+
+.tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--style1-blue-dark, #091057);
+    font-family: "IBM Plex Mono";
+    font-size: var(--Headline-Small-Size, 24px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 26.4px */
+}
+
+
+
+.tab hr{
+    width: 257.5px;
+    height: 0px;
+    stroke-width: 0.7px;
+    stroke: var(--CoolGray-90, #21272A);
+}
+
+.menu-item .icons{
+    width: var(--icon-size-50, 28px);
+    height: var(--icon-size-50, 28px);
+}
+

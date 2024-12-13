@@ -66,7 +66,7 @@
             const password = document.getElementById('password').value;
     
             if (email && password) {
-                window.location.href = "../views/dashboard.html";
+                window.location.href = "?page=2";
             } else {
                 alert("Veuillez remplir tous les champs.");
             }

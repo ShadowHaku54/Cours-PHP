@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - CrediFlow</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/styles/topbar.css">
-    <link rel="stylesheet" href="./css/styles/dashboard.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/navmenu.css">
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/topbar.css">
+    <script src="./js/script.js"></script>
 </head>
+
 <body>
-    <div id="insert-Navmenu">Chargement en cours</div>
+    <div id="insert-Navmenu">
+        <div id="Navmenu">
+            <div id="sous-nav">
+                <div id="logo-titre">
+                    <img src="./assets/logo/crediflow-logo.svg" alt="image svg" class="logo">
+                    <p class="titreLogo"><span class="credi">Credi</span><span class="flow">Flow</span></p>
+                </div>
+                <div id="menu">
+                    <div id="menu-fonc">
+                        <div id="menu-contain">
+                            <a href="" class="menu-item" id="active">
+                                <img src="./assets/icons/home.svg" alt="image svg" class="icons first">
+                                <img src="./assets/icons/home-simple.svg" alt="image svg" class="icons second">
+                                <span>Dashboard</span>
+                            </a>
+                            <hr>
+                        </div>
+                        <div id="menu-contain">
+                            <a href="" class="menu-item">
+                                <img src="./assets/icons/gestion.svg" alt="image svg" class="icons first">
+                                <img src="./assets/icons/gestion-simple.svg" alt="image svg" class="icons second">
+                                <span>Gestion dette</span>
+                            </a>
+                            <hr>
+                        </div>
+                        <div id="menu-contain">
+                            <a href="" class="menu-item">
+                                <img src="./assets/icons/clients.svg" alt="image svg" class="icons first">
+                                <img src="./assets/icons/clients-simple.svg" alt="image svg" class="icons second">
+                                <span>Clients</span>
+                            </a>
+                            <hr>
+                        </div>
+                        <div id="menu-contain">
+                            <a href="" class="menu-item">
+                                <img src="./assets/icons/notifications.svg" alt="image svg" class="icons first">
+                                <img src="./assets/icons/notifications-simple.svg" alt="image svg" class="icons second">
+                                <span>Notifications</span>
+                            </a>
+                            <hr>
+                        </div>
+                        <div id="menu-contain">
+                            <a href="" class="menu-item">
+                                <img src="./assets/icons/notifications.svg" alt="image svg" class="icons first">
+                                <img src="./assets/icons/notifications-simple.svg" alt="image svg" class="icons second">
+                                <span>Cumul clients</span>
+                            </a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-menu">
+                <div id="sous-footer-menu">
+                    <a href="./index.html" class="buton-icon">
+                        <div class="content-buton-icon">
+                            <img src="./assets/icons/exit-outline.svg" alt="image svg" class="icons first">
+                            <img src="./assets/icons/exit-outline-full-black.svg" alt="image svg" class="icons second">
+                        </div>
+                    </a>
+                    <a href="#" class="buton-icon">
+                        <div class="content-buton-icon">
+                            <img src="./assets/icons/Profile_user.svg" alt="image svg" class="icons first">
+                            <img src="./assets/icons/Profile_user-full-black.svg" alt="image svg" class="icons second">
+                        </div>
+                    </a>
+                    <a href="#" class="buton-icon">
+                        <div class="content-buton-icon">
+                        <img src="./assets/icons/settings.svg" alt="image svg" class="icons first">
+                        <img src="./assets/icons/settings-full-black.svg" alt="image svg" class="icons second">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <div id="container">
         <header id="insert-topbar">Chargement en cours...</header>
         <div id="contain">
@@ -21,7 +100,7 @@
                 </div>
                 <div class="col periode-container">
                     <h2 class="periode-title">Période</h2>
-            
+
                     <div class="periode-options">
                         <label class="radio-button">
                             <input type="radio" name="periode" value="semaine">
@@ -44,7 +123,7 @@
                             <span class="radio-label">personnalisé</span>
                         </label>
                     </div>
-            
+
                     <!-- Sélection des dates -->
                     <div class="periode-dates">
                         <div class="date-group">
@@ -148,7 +227,7 @@
         }
 
         import generateNavmenu from "/scripts/create-components/generateNavmenu.js";
-       
+
         try {
             const menuItem = generateNavmenu("Tableau de bord");
             document.getElementById("insert-Navmenu").innerHTML = menuItem;
@@ -157,4 +236,5 @@
         }
     </script>
 </body>
+
 </html>
