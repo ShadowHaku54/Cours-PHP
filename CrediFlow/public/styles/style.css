@@ -1,0 +1,150 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Valeurs principales */
+:root {
+    --primary-color: #091057;
+    --secondary-color: #f7941d;
+    --text-color: #333;
+    --tab-active-bg: #D6924C;
+
+    /* Couleurs de fond et de bordure */
+    --input-bg: #f9f9f9;
+    --border-color: #ddd;
+    --background-color: #F2F4F8;
+
+    /* États et nuances */
+    --hover-bg: #FFDCB2;
+    --light-gray: #666;
+    --CoolGray-10: #F2F4F8;
+    --CoolGray-20: #DDE1E6;
+    --CoolGray-30: #C1C7CD;
+    --CoolGray-50: #A2A9B0;
+    --CoolGray-60: #878D96;
+    --CoolGray-70: #4D5358;
+    --CoolGray-80: #343A3F;
+    --CoolGray-90: #21272A;
+
+    /* Tailles*/
+    --icon-size-90: 50px;
+    --icon-size-60: 35px;
+    --icon-size-50: 28px;
+    --icon-size-40: 24px;
+
+    /* Typographie */
+    --font-size-1: 40px;
+    --primary-font-family: 'IBM Plex Mono', monospace;
+    --secondary-font-family: 'Poppins', sans-serif;
+
+}
+
+/* Général */
+body {
+    background-color: var(--CoolGray-10);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding-left: 280px;
+    line-height: 1.6;
+    font-family: var(--secondary-font-family);
+}
+
+#insert-Navmenu{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#contain{
+    height: 100%;
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    align-self: stretch;
+}
+
+a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Inhère la couleur du texte parent */
+}
+
+.fill-container-width {
+    width: 100%;
+}
+
+.fill-container-height {
+    height: 100%;
+}
+
+.second{
+    display: none;
+}
+
+.icons{
+    cursor: pointer;
+    width: var(--size-40);
+    height: var(--size-40);
+}
+
+#active{
+    background-color: var(--tab-active-bg);
+}
+
+#active .second{
+    display: flex;
+}
+
+#active .first{
+    display: none;
+}
+
+.row-cols{
+    width: 100%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.row{
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+}
+
+.row-main-contain{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+}
+
+.row-main-contain .insert-img{
+    width: 100%;
+}
+
+.title_page{
+    color: #000;
+    text-align: center;
+    font-family: "IBM Plex Mono";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 44px */
+    text-align: center;
+    width: 100%;
+}

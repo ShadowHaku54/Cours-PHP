@@ -1,0 +1,149 @@
+  /* Section Profil */
+  .profile-section {
+    width: 300px;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+  }
+  
+  .profile-section h2 {
+    color: #1e2b56;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .profile-details .total-pay {
+    font-size: 16px;
+    color: #1e2b56;
+  }
+  
+  .profile-details .amount {
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  
+  .view-more {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .view-more:hover {
+    background-color: #0041cc;
+  }
+  
+  /* Section Enregistrement Dette */
+  .debt-section {
+    width: 350px;
+  }
+  
+  .debt-section h2 {
+    color: #1e2b56;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-group .calendar-icon {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .amount-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .amount-field input {
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+  }
+  
+  .amount-field .currency {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .amount-field .dash {
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #e60000;
+  }
+  

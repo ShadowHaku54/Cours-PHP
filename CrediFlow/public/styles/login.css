@@ -1,0 +1,234 @@
+/* En-tête */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding-top: 5px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header .logo h1 span {
+    color: var(--secondary-color);
+}
+
+/* Conteneur principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Titre */
+.login-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    font-size: 0.95rem;
+    color: var(--light-gray);
+    margin-bottom: 30px;
+}
+
+/* Formulaire */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--input-bg);
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Mot de passe avec icône */
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    padding-right: 45px;
+}
+
+.password-input .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.password-input .toggle-password img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.password-input.toggle-password img:hover {
+    opacity: 1;
+}
+
+/* Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--light-gray);
+}
+
+.form-options a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton principal */
+.btn-primary {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Connexion sociale */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 10px 0;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-buttons button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.social-buttons button.google {
+    color: #db4437;
+    border-color: #db4437;
+}
+
+.social-buttons button.google:hover {
+    background: #db4437;
+    color: #fff;
+}
+
+.social-buttons button.apple {
+    color: #686868;
+    border-color: #333;
+}
+
+.social-buttons button.apple:hover {
+    background: #333;
+    color: #fff;
+}
+
+.social-buttons button.facebook {
+    color: #4267B2;
+    border-color: #4267B2;
+}
+
+.social-buttons button.facebook:hover {
+    background: #4267B2;
+    color: #fff;
+}

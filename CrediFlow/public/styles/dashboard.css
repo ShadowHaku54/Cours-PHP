@@ -1,0 +1,212 @@
+/* Partie 1 */
+.titre_ouverture{
+    color: var(--style1-blue-dark, #091057);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 70px;
+}
+.bienvenue{
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 22px */
+    width: 100%;
+    text-align: center;
+}
+
+/* Container */
+.periode-container {
+  background-color: #f5f6f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.periode-title {
+  font-size: 1.5rem;
+  font-family: "IBM Plex Mono";
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Radio Buttons */
+.periode-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-circle {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.radio-button input[type="radio"]:checked + .radio-circle {
+  background-color: #2196f3;
+}
+
+.radio-label {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* Dates */
+.periode-dates {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.date-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 0.9rem;
+}
+
+.date-group label {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  width: 100px;
+  text-align: center;
+}
+
+.input-group .calendar-icon {
+  margin-left: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  background-color: #dfe3e8;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: #f6a309;
+}
+
+/* Container BAS */
+.debtor-container {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* List Styles */
+.debtor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.debtor-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #bbdefb, #e3f2fd); /* Dégradé progressif */
+    transition: background-color 0.3s ease;
+}
+
+/* Gradient for each rank */
+.debtor-item:nth-child(1) {
+    background: linear-gradient(to right, #2196f3, #64b5f6);
+}
+
+.debtor-item:nth-child(2) {
+    background: linear-gradient(to right, #64b5f6, #90caf9);
+}
+
+.debtor-item:nth-child(3) {
+    background: linear-gradient(to right, #90caf9, #bbdefb);
+}
+
+.debtor-item:nth-child(4) {
+    background: linear-gradient(to right, #bbdefb, #e3f2fd);
+}
+
+.debtor-item:nth-child(5) {
+    background: linear-gradient(to right, #e3f2fd, #f5f5f5);
+}
+
+.debtor-item:hover{
+    background: #f5b676;
+}
+
+.rank {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}

@@ -1,0 +1,158 @@
+#Navmenu{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: var(--CoolGray-30, #C1C7CD);
+}
+
+#sous-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#logo-titre{
+    display: flex;
+    height: 166px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: var(--CoolGray-10, #F2F4F8);
+}
+
+#logo-titre img{
+    display: flex;
+    width: 70px;
+    height: 66.379px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.titreLogo{
+    display: flex;
+    width: 210px;
+    height: 53px;
+    padding: 0px 7px 13px 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.titreLogo .credi{
+    color: var(--style1-blue-dark, #091057);
+    text-align: center;
+    font-family: "IBM Plex Mono";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 39.6px */
+}
+
+.titreLogo .flow{
+    color: var(--style1-orange, #EC8305);
+    font-family: "IBM Plex Mono";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    margin-right: 3px;
+    align-self: stretch;
+    background: var(--Default-White, #FFF);
+}
+
+#menu-fonc{
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+
+#menu-contain{
+    display: flex;
+    height: 100%;
+    min-height: 380px;
+    max-height: 450px;
+    padding: 0px 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+
+/* Footer menu */
+#footer-menu{
+    display: flex;
+    width: 284px;
+    height: 79px;
+    padding-top: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sous-footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.buton-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    height: 100%;
+    width: 15%;
+    background: var(--blue-clair, #E6F7FF);
+    border: medium solid var(--CoolGray-30, #C1C7CD);
+}
+
+.content-buton-icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-menu .icons{
+    width: var(--icon-size-90);
+    height: var(--icon-size-90);
+}
+
+a:hover{
+    background-color: var(--hover-bg);
+}
+
+a:hover .icons.second{
+    display: flex;
+}
+
+a:hover .icons.first{
+    display: none;
+}

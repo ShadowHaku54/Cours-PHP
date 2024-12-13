@@ -1,0 +1,36 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Poppins:wght@300;400;600&display=swap');
+
+/* Couleurs principales */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f7941d;
+    --text-color: #333;
+    --background-color: #F2F4F8;
+    --input-bg: #f9f9f9;
+    --border-color: #ddd;
+    --hover-bg: #0056b3;
+    --light-gray: #666;
+}
+
+/* Général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+}
+
